@@ -5,6 +5,11 @@ function isPalindrome(word) {
 /* 
   Add your pseudocode here
 */
+function isPalindrome(str) {
+  const formattedStr = str.replace(/[^a-zA-Z]/g, '').toLowerCase();
+  const reversedStr = formattedStr.split('').reverse().join('');
+  return formattedStr === reversedStr;
+}
 
 /*
   Add written explanation of your solution here
